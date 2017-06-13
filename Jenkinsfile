@@ -1,5 +1,11 @@
 node("android"){
+  stage("checkout){
+    checkout scm
+  }
+     
   stage("build"){
-    sh './gradlew assembleDebug'
+    sh 'pwd'
+    sh 'ls -laht'
+    sh './gradlew clean assembleDebug'
   }
 }
