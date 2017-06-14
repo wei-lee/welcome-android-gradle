@@ -6,6 +6,7 @@ node("android"){
   stage("build"){
     sh 'pwd'
     sh 'ls -laht'
+    sh 'curl http://google.com'
     sh './gradlew clean assembleDebug'
   }
 }
