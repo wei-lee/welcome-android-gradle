@@ -4,10 +4,6 @@ node("android"){
   }
      
   stage("build"){
-    sh 'curl http://google.com'
-    sh 'echo $ANDROID_HOME'
-    sh 'find $ANDROID_HOME | grep zipalign'
-    sh 'which zipalign'
     sh './gradlew clean assembleRelease' // builds app/build/outputs/app-release-unsigned.apk file
   }
   
