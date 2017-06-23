@@ -17,8 +17,7 @@ node("android"){
         // signedApkMapping: [ $class: UnsignedApkBuilderDirMapping ],
         // uncomment the following line to output the signed APK as a sibling of the unsigned APK, as described above, or just omit signedApkMapping
         // you can override these within the script if necessary
-        // androidHome: '/usr/local/Cellar/android-sdk',
-        zipalignPath: '/opt/android-sdk-linux/build-tools/25.0.3/zipalign'
+        // androidHome: '/usr/local/Cellar/android-sdk'
     )
   }
 
